@@ -1,0 +1,29 @@
+{
+  "name": "AndreaTheme",
+  "version": "1.0.0",
+  "description": "Marco de trabajo para trabajar themes custom en Wordpress, basado en Underscore y agregado DaTools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgaitan/AndreaTheme.git"
+  },
+  "keywords": [],
+  "author": "David Gaitan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgaitan/AndreaTheme/issues"
+  },
+  "homepage": "https://github.com/dgaitan/AndreaTheme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

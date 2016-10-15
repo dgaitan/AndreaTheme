@@ -1,0 +1,60 @@
+
+/*
+*	Menus
+*/
+
+.simple-nav {
+	@include format-navs;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 15px 0;
+	
+	li{
+		margin-right: 5px;
+
+		a{
+			color: $menu-font-color;
+			padding: 8px 15px;
+			display: block;
+			border-radius: 4px;
+			transition: all .3s;
+
+			&:hover, &.active {
+				background-color: rgba($gray-color, .5);
+			}
+
+		}	
+	}
+
+	&.right {
+		justify-content: flex-end;
+	}
+
+	&.vertical {
+		flex-direction: column;
+
+		li {
+			margin-right: 0;
+			margin-bottom: 5px;
+		}
+	}
+
+	&.black {
+		li a {
+			&:hover, &.active {
+				background-color: rgba($black-color, .9);
+				color: #FFF;
+			}
+		}
+	}
+
+	&.blue {
+		li a {
+			&:hover, &.active {
+				background-color: rgba($blue-color, .9);
+				color: #FFF;
+			}
+		}
+	}
+}
+
