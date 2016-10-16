@@ -1,8 +1,8 @@
 const gulp = require('gulp'),
 	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer')
-	uglify = require('gulp-uglify')
-	concat = require('gulp-concat');
+	autoprefixer = require('gulp-autoprefixer'),
+	uglify = require('gulp-uglify'),
+	concat = require('gulp-concat'),
 	browser = require('browser-sync').create();
 
 //compile sass
@@ -29,6 +29,7 @@ gulp.task('default', function(){
 	gulp.watch('./*.php').on('change', browser.reload);
 	gulp.watch('./*.css').on('change', browser.reload);
 	gulp.watch('./template-parts/*.php').on('change', browser.reload);
+	gulp.watch('./inc/*.php').on('change', browser.reload);
 	gulp.watch('./assets/css/*.css').on('change', browser.reload);
 	gulp.watch('./assets/js/*.js').on('change', browser.reload);
 	gulp.watch('./resources/js/*.js', ['minify']);
